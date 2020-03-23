@@ -1,0 +1,9 @@
+input: card file
+output : jpeg images
+examples relationships between input and outputs
+pseudocode:
+1_ open card file
+2_ look for beginning of a jpeg file
+3_ open a new jpeg file
+4_ write 512 bytes until a new jpeg is found 
+
