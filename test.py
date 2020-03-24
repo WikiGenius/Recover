@@ -1,3 +1,13 @@
+# /********************************************************
+
+# test file
+
+# Author: Muhammed El-Yamani
+# muhammedelyamani92@gmail.com
+# March 2020
+
+
+# ********************************************************/
 from goto import with_goto
 path = "card.raw"
 count = 0
@@ -17,6 +27,7 @@ def test(count):
             # 5 check the header with signature jpg
             if b1 == 0xff and b2 == 0xd8 and b3 == 0xff and b4 & 0xf0 == 0xe0:
                 count += 1
+                print("recovering image{:03d}.jpg ...".format(count));
                 # 6 yes -> open new image jpg
                 label .loop
                 with open("images/{:03d}.jpg".format(count), "ab") as image:
@@ -27,5 +38,5 @@ def test(count):
                     # go to step 6
                     goto .loop
 
-
-test(count)
+if __name__ == "__main__":
+    test(count)

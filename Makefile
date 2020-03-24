@@ -1,6 +1,6 @@
 CC =clang
 CFLAGS =-c -Wall -g
-LDLIBS=-lm
+LDLIBS=-lm 
 all: recover
 recover: recover.o  
 	$(CC) recover.o -o recover
@@ -9,4 +9,4 @@ recover.o: recover.c
 test: 
 	python test.py
 clean:
-	rm -rf *.o recover images/*.jpg
+	rm -rf *.o a.out recover images/*.jpg
