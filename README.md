@@ -1,6 +1,7 @@
 # Explanation
 
 ```bash
+mkdir images
 ./recover card.raw
 ```
 
