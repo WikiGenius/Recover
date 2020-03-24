@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "test.py", line 100, in <module>
-    test(count)
-  File "test.py", line 27, in test
-    (byte1, byte2, byte3, byte4) = (int.from_bytes(byte_list[0], 'big'), int.from_bytes(
-TypeError: cannot convert 'int' object to bytes

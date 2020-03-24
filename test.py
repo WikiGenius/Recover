@@ -19,11 +19,13 @@ def test(count):
                 count += 1
                 # 6 yes -> open new image jpg
                 label .loop
-                with open("{:03d}.jpg".format(count),"ab") as image:
-                    #7 write into image
+                with open("images/{:03d}.jpg".format(count), "ab") as image:
+                    # 7 write into image
                     image.write(block)
             else:
                 if count > 0:
                     # go to step 6
                     goto .loop
+
+
 test(count)
